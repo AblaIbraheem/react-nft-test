@@ -1,0 +1,350 @@
+{
+    "abi":
+    [
+		{
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "_treasury",
+					"type": "address"
+				}
+			],
+			"stateMutability": "nonpayable",
+			"type": "constructor"
+		},
+		{
+			"inputs": [],
+			"name": "VIRoyalty",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "VITreasury",
+			"outputs": [
+				{
+					"internalType": "address",
+					"name": "",
+					"type": "address"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "admin",
+			"outputs": [
+				{
+					"internalType": "address",
+					"name": "",
+					"type": "address"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "_royalty",
+					"type": "uint256"
+				}
+			],
+			"name": "changeRoyalty",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "_treasury",
+					"type": "address"
+				}
+			],
+			"name": "changeTreasury",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "getAllPurchases",
+			"outputs": [
+				{
+					"components": [
+						{
+							"internalType": "uint256",
+							"name": "timestamp",
+							"type": "uint256"
+						},
+						{
+							"internalType": "address",
+							"name": "buyer",
+							"type": "address"
+						},
+						{
+							"internalType": "address",
+							"name": "beneficiary",
+							"type": "address"
+						},
+						{
+							"internalType": "uint256",
+							"name": "donation",
+							"type": "uint256"
+						}
+					],
+					"internalType": "struct Donations.purchaseData[]",
+					"name": "",
+					"type": "tuple[]"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "getAllRePurchases",
+			"outputs": [
+				{
+					"components": [
+						{
+							"internalType": "uint256",
+							"name": "timestamp",
+							"type": "uint256"
+						},
+						{
+							"internalType": "address",
+							"name": "buyer",
+							"type": "address"
+						},
+						{
+							"internalType": "address",
+							"name": "beneficiary",
+							"type": "address"
+						},
+						{
+							"internalType": "uint256",
+							"name": "donation",
+							"type": "uint256"
+						},
+						{
+							"internalType": "address",
+							"name": "artist",
+							"type": "address"
+						},
+						{
+							"internalType": "uint256",
+							"name": "artist_spercentage",
+							"type": "uint256"
+						}
+					],
+					"internalType": "struct Donations.rePurchaseData[]",
+					"name": "",
+					"type": "tuple[]"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "_doner",
+					"type": "address"
+				}
+			],
+			"name": "getUserPurchases",
+			"outputs": [
+				{
+					"components": [
+						{
+							"internalType": "uint256",
+							"name": "timestamp",
+							"type": "uint256"
+						},
+						{
+							"internalType": "address",
+							"name": "buyer",
+							"type": "address"
+						},
+						{
+							"internalType": "address",
+							"name": "beneficiary",
+							"type": "address"
+						},
+						{
+							"internalType": "uint256",
+							"name": "donation",
+							"type": "uint256"
+						}
+					],
+					"internalType": "struct Donations.purchaseData[]",
+					"name": "",
+					"type": "tuple[]"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "_doner",
+					"type": "address"
+				}
+			],
+			"name": "getUserRePurchases",
+			"outputs": [
+				{
+					"components": [
+						{
+							"internalType": "uint256",
+							"name": "timestamp",
+							"type": "uint256"
+						},
+						{
+							"internalType": "address",
+							"name": "buyer",
+							"type": "address"
+						},
+						{
+							"internalType": "address",
+							"name": "beneficiary",
+							"type": "address"
+						},
+						{
+							"internalType": "uint256",
+							"name": "donation",
+							"type": "uint256"
+						},
+						{
+							"internalType": "address",
+							"name": "artist",
+							"type": "address"
+						},
+						{
+							"internalType": "uint256",
+							"name": "artist_spercentage",
+							"type": "uint256"
+						}
+					],
+					"internalType": "struct Donations.rePurchaseData[]",
+					"name": "",
+					"type": "tuple[]"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "minEthDonation",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "_ERC20Address",
+					"type": "address"
+				},
+				{
+					"internalType": "uint256",
+					"name": "_tokenAmount",
+					"type": "uint256"
+				},
+				{
+					"internalType": "address",
+					"name": "_beneficiary",
+					"type": "address"
+				},
+				{
+					"internalType": "address",
+					"name": "_owner",
+					"type": "address"
+				},
+				{
+					"internalType": "uint256",
+					"name": "_ownerPercentage",
+					"type": "uint256"
+				}
+			],
+			"name": "puchraseTokenWithERC20",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "_beneficiary",
+					"type": "address"
+				},
+				{
+					"internalType": "address",
+					"name": "_owner",
+					"type": "address"
+				},
+				{
+					"internalType": "uint256",
+					"name": "_ownerPercentage",
+					"type": "uint256"
+				}
+			],
+			"name": "purchaseToken",
+			"outputs": [],
+			"stateMutability": "payable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "_beneficiary",
+					"type": "address"
+				},
+				{
+					"internalType": "address",
+					"name": "_owner",
+					"type": "address"
+				},
+				{
+					"internalType": "uint256",
+					"name": "_ownerPercentage",
+					"type": "uint256"
+				}
+			],
+			"name": "rePurchaseToken",
+			"outputs": [],
+			"stateMutability": "payable",
+			"type": "function"
+		},
+		{
+			"stateMutability": "payable",
+			"type": "receive"
+		}
+	],
+    "address":"0x5724504041A97AF5c863bE13dfB4112a0aa554EF"
+}
